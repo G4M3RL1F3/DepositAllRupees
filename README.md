@@ -1,14 +1,16 @@
-# Majora's Mask: Recompiled Mod Template
+# Majora's Mask: Recompiled - Deposit All Rupees Mod
 
-This is an example mod for Majora's Mask: Recompiled that can be used as a template for creating mods. It has a basic build system, headers, sample code, and a mod config toml.
+This is a mod for Majora's Mask: Recompiled that allows the player to deposit their entire wallet into the bank. This can be done by talking to the bank teller, choosing to deposit, then press the `R` button on the input screen to automatically input the currently held rupees.
 
-Example code for using the recompui API to build ingame UI can be found in the `ui-example` branch.
+This mod is compatible with:
+* [PayLink Mobile Bank](https://thunderstore.io/c/zelda-64-recompiled/p/VincentsSin/PayLink_Mobile_Bank/) by Vincent'sSin
+* [Say Less](https://thunderstore.io/c/zelda-64-recompiled/p/Jazzkid/Say_Less/) by Jazzkid
 
 ### Writing mods
 See [this document](https://hackmd.io/fMDiGEJ9TBSjomuZZOgzNg) for an explanation of the modding framework, including how to write function patches and perform interop between different mods.
 
 ### Tools
-You'll need to install `clang` and `make` to build this template.
+You'll need to install `clang` and `make` to build this mod.
 * On Windows, using [chocolatey](https://chocolatey.org/) to install both is recommended. The packages are `llvm` and `make` respectively.
   * The LLVM 19.1.0 [llvm-project](https://github.com/llvm/llvm-project) release binary, which is also what chocolatey provides, does not support MIPS correctly. The solution is to install 18.1.8 instead, which can be done in chocolatey by specifying `--version 18.1.8` or by downloading the 18.1.8 release directly.
 * On Linux, these can both be installed using your distro's package manager. You may also need to install your distro's package for the `lld` linker. On Debian/Ubuntu based distros this will be the `lld` package.
